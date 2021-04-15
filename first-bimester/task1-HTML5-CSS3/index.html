@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img class = "profile" src="./img/background.jpeg" alt="Carlos Castillo">
+        <img class = "header-img" src="./img/background.jpeg" alt="Carlos Castillo">
         <nav class = "navar">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -65,10 +65,10 @@
         <aside class="content-aside">
             <h4>Aprende algo más sobre HMTL5</h4>
             <section class="content-section">
-                <iframe width="250" height="150" src="https://www.youtube.com/embed/b6ANbjXPrOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="150" height="150" src="https://www.youtube.com/embed/b6ANbjXPrOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <section class="content-section">
-                <iframe width="250" height="150" src="https://www.youtube.com/embed/ZqmBSRGb02g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="150" height="150" src="https://www.youtube.com/embed/ZqmBSRGb02g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
         </aside>
         <section class="content-section">
@@ -158,20 +158,32 @@
         <aside class="content-aside">
             <h4>Aprende algo más sobre CSS3</h4>
             <section class="content-section">
-                <iframe width="250" height="150" src="https://www.youtube.com/embed/ZadbEmXgQ54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="150" height="150" src="https://www.youtube.com/embed/ZadbEmXgQ54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <section class="content-section">
-                <iframe width="250" height="150" src="https://www.youtube.com/embed/e-71sakMLkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="150" height="150" src="https://www.youtube.com/embed/e-71sakMLkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
         </aside>
     </div>
     <footer>
-        <section>
-            <h4>Bibliografia</h4>
-        </section>
-        <section>
-            <h4>Formulario de contacto</h4>
-        </section>
+        <div class="footer-container">
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Tu nombre..">
+                <label for="lname">Apellido</label>
+                <input type="text" placeholder="Tu apellido..">
+                <label for="">Ciudad</label>
+                <select  name="">
+                    <option value="australia">Loja</option>
+                    <option value="canada">Quito</option>
+                    <option value="usa">Guayaquil</option>
+                </select>
+                <label for="">Mensaje</label>
+                <textarea placeholder="Escribe algo.." class="textarea"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </footer>
 </body>
 </html>
