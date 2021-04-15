@@ -4,9 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Y CSS3</title>
+    <title>Novedades HTML5 - CSS3</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <img class = "profile" src="./img/background.jpeg" alt="Carlos Castillo">
+        <nav class = "navar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/Guide/HTML/HTML5">Sitio oficial HTML5</a></li>
+                <li><a href="https://www.awwwards.com/websites/css3/">Sitio oficial CSS3</a></li>
+                <input type = "text" placeholder="Buscar...">
+            </ul>
+        </nav>
+        <h1 class="title">Novedades sobre HTML5 y CSS3</h1>
+    </header>
+    <div class="content">
+        <section class="content-section">
+            <h1>¿Qué es lo nuevo de HTML5?</h1>
+            <section class="content">
+                <article class="content-article">
+                    <section class="content-section">
+                        <img src="./img/html5_article1.png" alt="" class="header-html5-content">
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Incorpora nuevas etiquetas de carácter semántico y que nos ayudan a definir la estructura.</li>
+                            <li>Nuevos controles para formularios que antes sólo eran posibles con JavaScript o CSS.</li>
+                            <li>Soporta audio y vídeo de forma nativa.</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="content-article">
+                    <section class="content-section">
+                        <img src="./img/html5_article2.png" alt="" class="header-html5-content">
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Ya no es necesario el uso de comillas dobles en los atributos, siendo posible algo como.</li>
+                            <li>No hay una sintaxis tan estricta y no es necesario cerrar las etiquetas vacías.</li>
+                            <li>Podemos dibujar con etiquetas como  &lt;canvas&gt;.</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="content-article">
+                    <section class="content-section">
+                        <img src="./img/html5_article3.png" alt="" class="header-html5-content">
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Se han eliminado etiquetas y atributos no necesarios como los  &lt;frames&gt;.</li>
+                            <li>Ahora las etiquetas html, head y body no son obligatorias.</li>
+                            <li>Las etiquetas de tablas thead, tbody y tfoot tampoco son obligatorias.</li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+        </section>
+        <aside class="content-aside">
+            <h4>Aprende algo más sobre HMTL5</h4>
+            <section class="content-section">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/b6ANbjXPrOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section class="content-section">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/ZqmBSRGb02g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </aside>
+        <section class="content-section">
+            <h1>¿Qué es lo nuevo de CSS3?</h1>
+            <section class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bordes</th>
+                            <th>Fondos</th>
+                            <th>Color</th>
+                            <th>Text</th>
+                            <th>Transformaciones</th>
+                            <th>Transiciones</th>
+                            <th>Cajas</th>
+                            <th>Contenido</th>
+                            <th>Opacidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Colores múltiples de borde en un mismo lado.</li>
+                                    <li>Imágenes de borde.</li>
+                                    <li>Bordes redondeados.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Fondos Múltiples pueden ser añadidos al mismo elemento como capas</li>
+                                    <li>Posicionamiento del fondo con mayor precisión.</li>
+                                    <li>Pueden ser redimensionados.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Opacidad.</li>
+                                    <li>Gradientes.</li>
+                                    <li>Valores de color: HSL.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Sombras.</li>
+                                    <li>Desbordamiento.</li>
+                                    <li>Ajuste de línea.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Escales</li>
+                                    <li>Sesgar.</li>
+                                    <li>Mover.</li>
+                                    <li>Rotar en 2D o 3D.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Transición sencilla de estilos.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Sombras.</li>
+                                    <li>Cajas redimensionables.</li>
+                                    <li>Overflow separado en vertical u horizontal.</li>
+                                    <li>Compensación entre contorno y borde.</li>
+                                    <li>Modelos para especifcar altura y anchura.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Los estilos pueden añadir contenido a los elementos.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Los elementos pueden ser transparentes.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <aside class="content-aside">
+            <h4>Aprende algo más sobre CSS3</h4>
+            <section class="content-section">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/ZadbEmXgQ54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section class="content-section">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/e-71sakMLkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <section>
+            <h4>Bibliografia</h4>
+        </section>
+        <section>
+            <h4>Formulario de contacto</h4>
+        </section>
+    </footer>
 </body>
 </html>
