@@ -72,8 +72,8 @@ header {
     margin-left: 30px;
     margin-right: 50px;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: grid; /* Formato de rejillas */
+    grid-template-columns: auto auto auto; /* Tamaño de las columnas automático */
 }
 
 .content-section {
