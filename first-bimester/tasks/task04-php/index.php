@@ -9,7 +9,7 @@
         Ejemplo 1: Encontrar el numero mayor y menor de un array de numeros generados aleatoriamente y que no se encuentren repetidos
     */
     setStructure();
-    setHeader("Ejemplo 1: Encontrar el numero mayor y menor de un array de numeros generados aleatoriamente y que no se encuentren repetidos");
+    setHeader("Ejemplo 1: Encontrar el numero mayor y menor de un array de numeros generados aleatoriamente y que no se encuentren repetidos.");
     
     function getRandomNumbers($numbers_total, $min_value = 1, $max_value = 1000){
         $numbers_array = array();
@@ -38,7 +38,7 @@
     /* 
         Ejemplo 2: Buscar todos los números pares de una matriz generados aleatoriamente  y actualizar su valor con el cuadrado de cada número
     */
-    setHeader("Ejemplo 2: Buscar todos los números pares de una matriz generados aleatoriamente  y actualizar su valor con el cuadrado de cada número");
+    setHeader("Ejemplo 2: Buscar todos los números pares de una matriz generados aleatoriamente  y actualizar su valor con el cuadrado de cada número.");
     $numbers = getRandomNumbers(5, 1, 9);
     sort($numbers);
     function searchOddNumbers($numbers_array){
