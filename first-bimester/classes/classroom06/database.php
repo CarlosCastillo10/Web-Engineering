@@ -34,5 +34,34 @@
                 return false;
             }
         }
+        /* LEER DATOS A LA DB */
+        public function read(){
+            $sql = "SELECT * FROM clientes";
+            $result = mysqli_query($this->con, $sql);
+            return $result;
+        }
+
+        /* BORRAR DATOS A LA DB */
+        public function delete($id){
+            $sql = "DELETE FROM clientes WHERE id = $id";
+            $result = mysqli_query($this->con, $sql);
+            
+            if($result){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        /* ACTUALIZAR DATOS A LA DB */
+        public function update($id, $name, $lastname, $phone, $address, $email){
+            $sql = "UPDATE clientes SET nombres = '$name', apellidos = '$lastname', telefono = '$phone', direccion = '$address', correo_electronico = '$email' WHERE id = {$id}";
+            $result = mysqli_query($this->con, $sql);
+            if($result){
+                return true;
+            }else{
+                return false;
+            }
+        }
     }
 ?>
