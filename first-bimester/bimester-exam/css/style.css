@@ -1,0 +1,429 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: rgb(30, 102, 121);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(46, 140, 167);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* ============================== HEADER ========================================= */
+header {
+    transition: all 0.5s;
+    z-index: 997;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    height: 70px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+}
+  
+header .logo {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: rgb(30, 102, 121);
+}
+
+header .logo h1 a, header .logo h1 a:hover {
+    color: rgb(46, 140, 167);
+    text-decoration: none;
+}
+
+header .logo img {
+    max-height: 40px;
+}
+
+/* ============================== NAVBAR ========================================= */
+
+.navbar {
+    padding: 0;
+}
+  
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar ul li {
+    position: relative;
+    white-space: nowrap;
+    margin: 0 12px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 3px;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(30, 102, 121);
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(30, 102, 121);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before, .navbar li:hover a:before, .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar a:hover, .navbar .active, .navbar li:hover a {
+    color: rgb(46, 140, 167);
+}
+
+.report-btn {
+    margin-left: 25px;
+    background: rgb(30, 102, 121);
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px 9px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+.report-btn:hover {
+    background: rgb(46, 140, 167);
+    color: #fff;
+}
+
+
+/* ============================== HOME-SECTION ========================================= */
+#home-section {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/background.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+
+#home-section:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#home-section .container {
+    padding-top: 72px;
+    position: relative;
+    text-align: center;
+}
+
+#home-section h1 {
+    margin: 0 0 10px 0;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgb(255, 255, 255);
+}
+
+#home-section h2 {
+    color: rgb(238, 238, 238);
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+/* ============================== TITLE SECTION ========================================= */
+.title-section {
+    padding-bottom: 30px;
+}
+
+.title-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.title-section h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: rgb(30, 102, 121);
+    bottom: 0;
+    left: 0;
+}
+
+.title-section p {
+    margin-bottom: 0;
+    color: rgb(119, 119, 119);
+    font-size: 1em;
+    text-align: justify;
+}
+
+/* ============================== WORKSHOP-SECTION ========================================= */
+
+.workshop-card {
+    transition: all ease-in-out 0.3s;
+    background: #fefefe;
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    border-radius: 18px;
+    border-bottom: 5px solid #fff;
+}
+
+.workshops .workshop-card:hover {
+    transform: translateY(-10px);
+    border-color: rgb(30, 102, 121);
+}
+
+.workshops .workshop-card:hover h4 a {
+    color: rgb(30, 102, 121);
+}
+
+/* ============================== WORKSHOP TITLE ========================================= */
+
+.workshop-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+
+.workshop-title img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 18px 18px 0 0;
+    object-fit: cover;
+}
+
+.workshop-title:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 18px 18px 0 0;
+}
+
+.workshop-title h1 {
+    position: absolute;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.76); /* Sombra */
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.workshop-detail {
+    padding: 30px 30px;
+}
+
+.workshop-detail h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.workshop-detail p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.instructor-details {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.instructor-details::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgb(30, 102, 121);
+    bottom: 0;
+    left: 0;
+}
+
+.avatar-instructor {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.instructor-name {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instructor-name h6 {
+    position: relative;
+    color: rgb(119, 119, 119);
+}
+
+.item {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: rgb(30, 102, 121);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.icon i {
+    font-size: 23px;
+}
+
+.item p {
+    font-size: 1em;
+    padding-left: 18px;
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 102, 121);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 8px 25px 9px 25px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.register-btn:hover {
+    background: rgb(46, 140, 167);
+    color: rgb(255, 255, 255);
+}
+
+/* ============================== FOOTER ========================================= */
+
+#footer {
+    background: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .credits {
+    font-size: 13px;
+  }
+  
+#footer .credits a {
+    color: rgb(46, 140, 167);
+    transition: 0.3s;
+}
+
+#footer .credits a:hover {
+    color: rgb(30, 102, 121);
+}
+
+.back-to-top {
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin: -80px 20px;
+    background: rgb(30, 102, 121);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.back-to-top i {
+    font-size: 35px;
+    color: white;
+}
+
+
+/* ============================== HOME-SECTION ========================================= */

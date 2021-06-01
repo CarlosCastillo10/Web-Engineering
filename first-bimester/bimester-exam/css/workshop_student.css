@@ -1,0 +1,132 @@
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.workshop-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.workshop-title img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.workshop-title:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 18px;
+}
+
+.workshop-title h1 {
+    position: absolute;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.76); /* Sombra */
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.title-table{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.new-student-btn {
+    margin-left: 25px;
+    background: rgb(30, 102, 121);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 8px 25px 9px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.new-student-btn:hover {
+    background: rgb(46, 140, 167);
+    color: rgb(255, 255, 255);
+}
+
+.new-student-btn i{
+    margin-left: 10px;
+}
+
+#workshop-table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#workshop-table thead{
+    text-align: center;
+    background: rgba(0, 5, 7, 0.651);
+    color: white;
+}
+
+#workshop-table tbody{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions .edit i {
+    font-size: 20px;
+    margin-right: 20px;
+    color: rgb(30, 102, 121);
+}
+
+.actions .edit i:hover {
+    color: rgb(46, 140, 167);
+}
+
+.actions .delete i {
+    font-size: 20px;
+    color: rgb(168, 69, 69);
+}
+
+.actions .delete i:hover {
+    color: rgba(168, 69, 69, 0.808);
+}
+
+.cancel-btn {
+    margin-left: 25px;
+    background: rgb(168, 69, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 8px 25px 9px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.cancel-btn:hover {
+    background: rgba(168, 69, 69, 0.808);
+    color: rgb(255, 255, 255);
+}
+
+.cancel-btn i{
+    margin-left: 10px;
+}
+
+

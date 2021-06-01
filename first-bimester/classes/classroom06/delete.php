@@ -6,7 +6,7 @@
         $result = $customer->delete($id);
 
         if($result){
-            header("Location:index.php");
+            header("Location:../index.php");
         }else{
             echo "Error al eliminar el registro";
         }
