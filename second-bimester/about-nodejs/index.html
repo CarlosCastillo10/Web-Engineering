@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <section id="home" class="d-flex flex-column align-items-center justify-content-center">
+        <h1>NODE JS</h1>
+        <a href="#definition" class="btn-get-started"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
+    <header class="d-flex align-items-center">
+        <section class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="#">NODE JS</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="active" href="#home">Inicio</a></li>
+                    <li><a href="#definition">Definición</a></li>
+                    <li><a href="#present">Actualidad</a></li>
+                    <li><a href="#time-line">Línea de tiempo</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#companies">Empresas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!--SECCIÓN DENOMINADA 'DEFINICIÓN'-->
+        <section id="definition" class="definition">
+            <article class="container">
+                <section class="row no-gutters"> <!--Reiniciar los margin y padding izquierdo y derecho-->
+                    <img class="col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" src="img/node_definition.png" alt="NODE DEFINITION">
+                    <section class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                        <section class="content d-flex flex-column justify-content-center ml-5">
+                            <h3>¿Qué es Node JS?</h3>
+                            <p>
+                                Node.js es una plataforma del lado del servidor construida sobre el motor JavaScript de Google Chrome (motor V8). Node.js utiliza un modelo de E / S sin bloqueo controlado 
+                                por eventos que lo hace liviano y eficiente, perfecto para aplicaciones en tiempo real con uso intensivo de datos que se ejecutan en dispositivos distribuidos.
+                            </p>
+                            <section class="row">
+                                <section class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <section class="details">
+                                        <i class="bi bi-terminal"></i>
+                                        <p>Node.js = Runtime Environment + JavaScript Library</p>
+                                    </section>
+                                </section>
+                                <section class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <section class="details">
+                                        <i class="bi bi-clock"></i>
+                                        <p>Las aplicaciones de Node.js están escritas en JavaScript y se pueden ejecutar dentro del tiempo de ejecución de Node.js</p>
+                                    </section>
+                                </section>
+                                <section class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <section class="details">
+                                        <i class="bi bi-gear"></i>
+                                        <p>SIstemas operativos compatibles como OS X, Microsoft Windows y Linux.</p>
+                                    </section>
+                                </section>
+                                <section class="col-md-6 d-md-flex align-items-md-stretch">
+                                    <section class="details">
+                                        <i class="bi bi-exclamation-triangle"></i>
+                                        <p>No es recomendable utilizar Node.js para aplicaciones con uso intensivo de CPU.</p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+        
+        <!--SECCIÓN DENOMINADA 'ACTUALIDAD'-->
+        <section id ="present" class="present section-background">
+            <article class="container">
+                <section class="section-title">
+                  <h2>Uso actualidad</h2>
+                  <p>De acuerdo con la analista Shanhong Liu. Las Bibliotecas, marcos y herramientas más utilizados entre los desarrolladores, en todo el mundo, a principios de 2020.</p>
+                </section>
+                <section class="row section-content">
+                    <section class="col-lg-6">
+                        <section class="progress">
+                            <span class="tools">NODE.JS<i class="val">51.4%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="node-progress-bar" role="progressbar" aria-valuenow="51.4" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </section>
+                        <section class="progress">
+                            <span class="tools">.NET<i class="val">35.1%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="net-progress-bar" role="progressbar" aria-valuenow="35.1" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </section>
+                        <section class="progress">
+                            <span class="tools">.NET CORE<i class="val">26.7%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="net-core-progress-bar" role="progressbar" aria-valuenow="26.7" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-6">
+                        <section class="progress">
+                            <span class="tools">PANDAS<i class="val">15.5%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="pandas-progress-bar" role="progressbar" aria-valuenow="15.5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </section>
+                        <section class="progress">
+                            <span class="tools">TENSORFLOW<i class="val">11.5%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="tensorflow-progress-bar" role="progressbar" aria-valuenow="11.5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!--SECCIÓN DENOMINADA 'LÍNEA DE TIEMPO'-->
+        <section id ="time-line" class="time-line section-background">
+            <article class="container">
+                <section class="section-title">
+                    <h2>Línea de tiempo</h2>
+                    <p>La constitución de Node JS viene dada por la siguiente linea de tiempo, que pretende resumir hitos trascendentales que permitieron forjar su popularidad y uso.</p>
+                </section>
+                <section class="row">
+                    <section class="col-lg-6">
+                        <h3 class="time-line-title">Inicio</h3>
+                        <section class="time-line-items">
+                            <h4>Año 2009</h4>
+                            <p>
+                                <ul>
+                                    <li>Node.js fue lanzado el 27 de mayo</li>
+                                    <li>Compartió la primera vista previa de npm, el administrador de paquetes de Node</li>
+                                </ul>
+                            </p>
+                        </section>
+                        <h3 class="time-line-title">Evolución</h3>
+                        <section class="time-line-items">
+                            <h4>Año 2010-2013</h4>
+                            <p>
+                                <ul>
+                                    <li>Express: se lanzó un marco de desarrollo web Node.js</li>
+                                    <li>Soporte experimental de Node.js en Heroku</li>
+                                    <li>npm 1.0 lanzado</li>
+                                    <li>Ghost: blogs con Node.js</li>
+                                    <li>La pila MEAN: MongoDB, ExpressJS, AngularJS y Node.js</li>
+                                </ul>
+                            </p>
+                        </section>
+                        <section class="time-line-items">
+                            <h4>Año 2014-2016</h4>
+                            <p>
+                                <ul>
+                                    <li>npm presenta módulos privados</li>
+                                    <li>Versiones estables de node.JS que van desde la 4 a 6</li>
+                                    <li>Se introdujo los hilos (threads)</li>
+                                </ul>
+                            </p>
+                        </section>
+                    </section>
+                    <section class="col-lg-6">
+                        <h3 class="time-line-title">Adopción Generalizada</h3>
+                        <section class="time-line-items">
+                            <h4>Año 2017</h4>
+                            <p>
+                                <ul>
+                                    <li>El conteo de colaboradores aumentó a 1500 y Node obtuvo una calificación de más de 40,000 estrellas en GitHub</li>
+                                    <li>Según el Índice de software de código abierto de The Battery Ventures , Node fue el cuarto proyecto de código abierto más importante del año 2017</li>
+                                    <li>HTTP2 llegó al núcleo de Node.js</li>
+                                    <li>V8 introdujo Node.js en su suite de pruebas para mejorar el rendimiento</li>
+                                    <li>Las descargas de npm alcanzaron los 3000 millones cada semana</li>
+                                </ul>
+                            </p>
+                        </section>
+                        <section class="time-line-items">
+                            <h4>Año 2018-Actualidad</h4>
+                            <p>
+                                <ul>
+                                    <li>Llegaron los seguimientos de pila asíncronos</li>
+                                    <li>Nuevas funciones del lenguaje JavaScript</li>
+                                    <li>Implementación asincrónica / en espera más rápida</li>
+                                    <li>Ajustes y mejoras de rendimiento</li>
+                                    <li>Mejora en subprocesos de trabajo, N-API</li>
+                                    <li>Analizador HTTP predeterminado cambiado a llhttp</li>
+                                    <li>Nueva función experimental "Informes de diagnóstico"</li>
+                                </ul>
+                            </p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <!--SECCIÓN DENOMINADA 'CARACTERÍSTICAS'-->
+        <section id="features" class="features section-background">
+            <article class="container">
+                <section class="section-title">
+                    <h2>Características</h2>
+                    <p>
+                        HTTP es un elemento destacado en Node.js, diseñado teniendo en cuenta la transmisión de operaciones con streaming y baja latencia. 
+                        Esto hace que Node.js sea muy adecuado para la base de una librería o un framework web. Algunas de sus características son:
+                    </p>
+                </section>
+                <section class="row">
+                    <section class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <section class="feature-card">
+                            <p class="icon"><i class="bi bi-arrow-repeat"></i></p>
+                            <h4 class="feature-title">Asíncronas y controladas por eventos</h4>
+                            <p class="feature-description">
+                                Todas las API de la biblioteca Node.js son asincrónicas, es decir, sin bloqueo. 
+                                Básicamente, significa que un servidor basado en Node.js nunca espera a que una API devuelva datos. 
+                                El servidor pasa a la siguiente API después de llamarlo.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <section class="feature-card">
+                            <p class="icon"><i class="bi bi-cpu"></i></p>
+                            <h4 class="feature-title">Un solo subproceso pero altamente escalable</h4>
+                            <p class="feature-description">
+                                El mecanismo de eventos ayuda al servidor a responder sin bloqueos y hace que el servidor sea altamente escalable
+                                en comparación con los servidores tradicionales que crean subprocesos limitados para manejar solicitudes.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <section class="feature-card">
+                            <p class="icon"><i class="bi bi-folder-x"></i></p>
+                            <h4 class="feature-title">Sin almacenamiento en búfer</h4>
+                            <p class="feature-description">
+                                Las aplicaciones Node.js nunca almacenan en búfer ningún dato. Estas aplicaciones simplemente generan los datos en partes.
+                            </p>
+                        </section>
+                    </section>
+                    <section class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <section class="feature-card">
+                            <p class="icon"><i class="bi bi-file-code"></i></p>
+                            <h4 class="feature-title">Programación basada en eventos</h4>
+                            <p class="feature-description">
+                                Node.js usa eventos en gran medida y también es una de las razones por las que Node.js es bastante rápido en comparación con otras tecnologías similares. 
+                                Tan pronto como Node inicia su servidor, simplemente inicia sus variables, declara funciones y luego simplemente espera a que ocurra el evento.
+                            </p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <section id="companies" class="companies section-background">
+            <article class="container">
+                <section class="section-title">
+                    <h2>¿Quién usa Node JS?</h2>
+                    <p>A continuación se muestra algunas empresas o proyectos más importantes que están basados en Node.JS</p>
+                </section>
+                <section class="row companies-container">
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/linkedin.jpg" class="company-img mg-fluid" alt="Linkedin">
+                            <div class="company-info">
+                                <h4>Linkedin</h4>
+                                <p>
+                                    LinkedIn cambió de Ruby on Rails a Node.js a fines de 2011. Esto se debió principalmente a que los desarrolladores de Linkedin querían 
+                                    optimizar su aplicación móvil donde ahora todo está escrito completamente en Node.js.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/netflix.jpg" class="company-img img-fluid" alt="Netflix">
+                            <div class="company-info">
+                                <h4>Netflix</h4>
+                                <p>
+                                    La interfaz de usuario (UI) de Netflix se creó con Node.js. Según el equipo de Netflix, la modularidad del marco les animó a utilizar Node.js. 
+                                    Como consecuencia, Netflix también es casi dos veces más rápido durante el inicio.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/uber.jpg" class="company-img img-fluid" alt="UBER">
+                            <div class="company-info">
+                                <h4>UBER</h4>
+                                <p>
+                                    Hay tres razones principales por las que Uber eligió Node.js: facilidad para verificar errores; velocidades de procesamiento rápidas; 
+                                    y desarrollo continuo gracias a la comunidad de código abierto.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/trello.png" class="company-img img-fluid" alt="Trello">
+                            <div class="company-info">
+                                <h4>Trello</h4>
+                                <p>
+                                    El lado del servidor de Trello usa Node.js. Es importante que Trello y sus usuarios tengan actualizaciones inmediatas y 
+                                    Node.js tiene la capacidad de mantener muchas conexiones abiertas a la vez .
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/paypal.png" class="company-img img-fluid" alt="PayPal">
+                            <div class="company-info">
+                                <h4>PayPal</h4>
+                                <p>
+                                    PayPal utiliza Node.js para crear contenido orientado al usuario. Al equipo de software de PayPal le gusta que Node.js 
+                                    permita a los desarrolladores crear tanto en el lado del servidor como en el lado del cliente con JavaScript.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="col-lg-4 col-md-6 company-item">
+                        <section class="company-content">
+                            <img src="img/companies/nasa.jpg" class="company-img img-fluid" alt="NASA">
+                            <div class="company-info">
+                                <h4>NASA</h4>
+                                <p>
+                                    Los microservicios es una característica de Node.js donde los desarrolladores abordan el desarrollo de 
+                                    aplicaciones presentando el software como una colección de pequeños servicios en lugar de como una unidad autónoma. Con esta función, la NASA pudo trasladar su empresa a la nube.
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="row container-fluid">
+            <section class="bibliography col-lg-6">
+                <h3>Bibliografía</h3>
+                <p>
+                    <ul>
+                        <li>Statista. (2020, 11 junio).<em>Most utilized frameworks among developers worldwide 2020.</em>
+                            <a href="http://www.statista.com/statistics/793840/worldwide-developer-survey-most-used-frameworks/">
+                                http://www.statista.com/statistics/793840/worldwide-developer-survey-most-used-frameworks/
+                            </a>
+                        </li>
+                        <li>Node.js. (s. f.).<em>About.</em><a href="https://nodejs.org/en/about/">https://nodejs.org/en/about/</a></li>
+                        <li>Oluyege, P. (2019).<em>MongoDB, Express, Angular, and Node. js Fundamentals. Birmingham: Packt</em>Publishing Ltd.</li>
+                        <li>Documentation | Node.js. (2021). Retrieved 28 April 2021, from<a href="https://nodejs.org/en/docs/">https://nodejs.org/en/docs/</a> </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="authors">
+                <h3>Autores</h3>
+                <section class="row ml-5">
+                    <section class="ml-5 mt-3 mr-3">
+                        <p class="icon"><i class="mr-2 bi bi-person-fill"></i>Carlos Castillo</p>
+                        <p class="icon"><i class="mr-2 bi bi-building"></i>UTPL</p>
+                        <p class="icon"><i class="mr-2 bi bi-github"></i>CarlosCastillo10</p>
+                        <p class="icon"><i class="mr-2 bi bi-geo-alt-fill"></i>LOJA - ECUADOR</p>
+                    </section>
+                    <section class="ml-5 mt-3 mr-3">
+                        <p class="icon"><i class="mr-2 bi bi-person-fill"></i>Luis Daniel Erazo</p>
+                        <p class="icon"><i class="mr-2 bi bi-building"></i>UTPL</p>
+                        <p class="icon"><i class="mr-2 bi bi-github"></i>lderazo1</p>
+                        <p class="icon"><i class="mr-2 bi bi-geo-alt-fill"></i>LOJA - ECUADOR</p>
+                    </section>
+                    <setion class="ml-5 mt-3">
+                        <p class="icon"><i class="mr-2 bi bi-person-fill"></i>Arianna Vinueza</p>
+                        <p class="icon"><i class="mr-2 bi bi-building"></i>UTPL</p>
+                        <p class="icon"><i class="mr-2 bi bi-github"></i>AriannaDC</p>
+                        <p class="icon"><i class="mr-2 bi bi-geo-alt-fill"></i>LOJA - ECUADOR</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    </footer>
+</body>
+</html>

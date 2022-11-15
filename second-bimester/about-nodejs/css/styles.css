@@ -1,0 +1,491 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(90, 101, 110);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+}
+
+/* ================================== HOME =============================== */
+#home {
+    width: 100%;
+    height: 80vh; /* medidas relativas */
+    background: url("../img/node_background.svg") top center; /* Alinear al centro */
+    background-size: cover; /* Cubrir todo el tamaño del contenedor */
+    padding: 0 15px;
+}
+
+#home:before {
+	content:'';
+	position: absolute;
+    width: 100%;
+    height: 80vh;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#home h1 {
+    z-index: 111; /* Traer al frente el contenido */
+    margin: 0 0 10px 0;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.76); /* Sombra */
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 800; /* Colocar texto en negrita */
+    line-height: 56px;
+    color: white;
+}
+
+#home .btn-get-started {
+    z-index: 111; /* Traer al frente el contenido */
+    font-size: 3em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.76); /* Sombra */
+    color: white;
+    height: 60px;
+}
+
+#home .btn-get-started:hover { /* hover: cuando se pasa el mouse por el elemento */
+    padding-top: 10px;
+    color: rgba(80, 136, 43, 0.651);
+}
+
+/* ================================== HEADER =============================== */
+header {
+    height: 60px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
+header .logo h1 {
+    font-size: 1em;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1;
+    font-weight: bold; /* Texto en negrita */
+    letter-spacing: 3px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: rgba(80, 136, 43, 0.651);   
+}
+
+header .logo h1 a, header .logo h1 a:hover {
+    color: rgb(44, 73, 100);
+    text-decoration: none;
+}
+
+header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+/* ================================== NAVBAR =============================== */
+.navbar {
+    padding: 0;
+}
+  
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 0.9em;
+    color: rgb(44, 73, 100);
+    white-space: nowrap;
+    transition: 0.3s; /* Al pasar el mouse por los elementos del nav sea mas amigable */
+}
+
+.navbar a:hover {
+    color: rgba(106, 143, 82, 0.651);
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar .active {
+    color: rgba(80, 136, 43, 0.651);
+}
+
+/* ================================== GENERAL STYLE SECTIONS =============================== */
+.section-background {
+    background: linear-gradient(180deg, rgb(242, 246, 249) 0%, white 100%);
+    margin-bottom: 50px;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+  
+.section-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: rgb(52, 86, 118);
+}
+  
+.section-title h2:after { /* Agregar contenido despues del encabezado*/
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: rgba(80, 136, 43, 0.651);
+    bottom: 0;
+    left: 0;
+}
+  
+.section-title p {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* ================================== DEFINITION =============================== */
+.definition .content {
+    padding: 30px 0;
+}
+
+.definition .content h3 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: rgb(44, 73, 100);
+    text-align: center;
+}
+
+.definition .content p {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.definition .content .details {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.definition .content .details i {
+    display: block;
+    font-size: 2em;
+    color: rgba(80, 136, 43, 0.651);
+    float: left;
+    line-height: 0;
+}
+
+.definition .content .details p {
+    padding: 1px 0 0 0;
+    margin: 0 0 0 50px;
+    font-family: "Playfair Display", serif;
+    font-size: 0.8em;
+    color: rgb(67, 112, 153);
+    text-align: justify;
+}
+/* ================================== PRESENT =============================== */
+.present .progress {
+    height: 50px;
+    margin-bottom: 15px;
+    display: block;
+    background: none;
+}
+
+/* PROGRESS */
+.present .progress .tools {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: rgb(44, 73, 100);
+}
+
+.present .progress .tools .val {
+    float: right;
+    font-style: normal;
+}
+
+.present .progress-bar-wrap { /* Fondo del progress bar */
+    background: rgba(154, 214, 114, 0.2);
+}
+
+.present .node-progress-bar {
+    width: 51.4%;
+    height: 20px;
+    background-color: rgba(80, 136, 43, 0.651);
+}
+
+.present .net-progress-bar {
+    width: 35.1%;
+    height: 20px;
+    background-color: rgba(80, 136, 43, 0.651);
+}
+
+.present .net-core-progress-bar {
+    width: 26.7%;
+    height: 20px;
+    background-color: rgba(80, 136, 43, 0.651);
+}
+
+.present .pandas-progress-bar {
+    width: 15.5%;
+    height: 20px;
+    background-color: rgba(80, 136, 43, 0.651);
+}
+
+.present .tensorflow-progress-bar {
+    width: 11.5%;
+    height: 20px;
+    background-color: rgba(80, 136, 43, 0.651);
+}
+
+/* ================================== TIME LINE =============================== */
+.time-line .time-line-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(75, 124, 170);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Dibujar la linea vertical de la linea de tiempo */
+.time-line .time-line-items {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(80, 136, 43, 0.651);
+    position: relative;
+}
+
+.time-line .time-line-items h4 {
+    line-height: 18px;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(44, 72, 99);
+    margin-bottom: 10px;
+}
+
+.time-line .time-line-items ul {
+    padding-left: 20px;
+}
+
+.time-line .time-line-items ul li {
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+/* Crear el circulo de la linea de tiempo */
+.time-line .time-line-items:before { /* Insertar contenido antes del elemento */
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 150px;
+    left: -9px;
+    top: 0;
+    background: white;
+    border: 2px solid rgba(80, 136, 43, 0.651);
+}
+
+/* ================================== FEATURES =============================== */
+.features .feature-card {
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+.features .feature-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1; /* Enviar al fondo el contenido */
+}
+
+.features .feature-card:hover:before {
+    background: rgba(80, 136, 43, 0.651);
+    height: 100%;
+    border-radius: px;
+}
+
+.features .icon {
+    margin: 0 auto 30px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(80, 136, 43, 0.651);
+    transition: all 0.3s ease-in-out;
+}
+
+.features .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: white;
+}
+
+.features .feature-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.features .feature-description {
+    font-size: 0.9em;
+    line-height: 24px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.features .feature-card:hover, .features .feature-card:hover .feature-description {
+    color: white;
+}
+
+.features .feature-card:hover .icon {
+    background: white;
+}
+
+.features .feature-card:hover .icon i {
+    color: rgba(80, 136, 43, 0.651);
+}
+
+/* ================================== COMPANIES =============================== */
+.companies .company-item {
+    margin-bottom: 30px;
+}
+
+.companies .company-content {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.companies .company-content .company-img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 15px;
+}
+
+.companies .company-content:before {
+    content: "";
+    background: rgba(44, 73, 100, 0.7); /* Color del fondo */
+    border-radius: 15px;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2; /* Poner al frente el texto */
+    opacity: 0;
+}
+
+.companies .company-content .company-info {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s; /* Transicion con inicio lento */
+}
+  
+.companies .company-content .company-info h4 {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 600;
+}
+  
+.companies .company-content .company-info p {
+    margin-top: 20px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.companies .company-content:hover:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.companies .company-content:hover .company-info {
+    opacity: 1;
+}
+
+/*FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 24px 0;
+    font-size: 0.8em;
+    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+footer .bibliography {
+    margin-left: 25px;
+}
+
+footer .bibliography ul li {
+    margin-bottom: 20px;
+}
+
+footer .authors {
+    border-left: 1px solid rgba(80, 136, 43, 0.651);
+}
+
+footer .authors h3 {
+    margin-left: 25px;
+}
+
+
+footer .icon i {
+    color: rgba(80, 136, 43, 0.651);
+}
+
+.back-to-top {
+    background: rgba(80, 136, 43, 0.651);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.back-to-top i {
+    font-size: 24px;
+    color: white;
+    line-height: 0;
+  }
+  
+.back-to-top:hover {
+    background: rgba(134, 194, 94, 0.651);
+    color: white;
+}
+  
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
